@@ -2,11 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>lixiong24</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1705;1685</NoWarn>
-    <DocumentationFile>E:\MyProject\IPS3.1\JXIPS\MyADO\MyADO.xml</DocumentationFile>
+    <DocumentationFile>E:\MyProject\MyADO\MyADO\MyADO.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\MyProject\MyADO\MyADO\MyADO.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
